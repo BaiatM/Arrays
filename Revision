@@ -1,24 +1,49 @@
-Purpose - To store collectiom of multiple values of same data type
+ Array 
+Purpose - To store collection of multiple values of same data type
 Operation on 1D array
-
-    1) declare & initialize the array
-          int data[] = new int [5];
-          int data[] = {34,23,53,632,123,1,4,67,2,5};
-          
-    2) how to print all the elements from array?
-          first option ==>  Index based for loop
-          
-          for(int i=0; i<data.length(); i++){
-            System.out.println(data[i]);
-           }
-           
-          second option ==> for each loop
-          
-          for(int a: data){
-            System.out.println(a);
-          }
-          
-     3) default value of arrays
-     
-          int data[] = new int [5:
-          
+    1) Declare & initialize the array
+        int data[] = new int[5];
+        int data[] = {34,34,45,62,56,23,78,43};
+    2) How to print all elements from the array?
+    
+        // Index based for loop
+        for(int i=0; i<data.length; i++){
+            System.out.println(data[i])
+        }
+        // For each loop
+        for(int a : data){
+            System.out.print(a);
+        }
+    
+    3) Default value of arrays
+        
+        int data[] = new int[5];
+        
+        System.out.println(data[0]); // 0
+    4) Accessing index that doesn't exist
+    
+        int data[] = new int[5];
+        System.out.println(data[5]); // Exception - ArrayIndexOutOfBoundException
+Operation on 2D array
+    1) Declare & initialize the array
+        int data[][] = new int[5][5];
+        int data[][] = {{23,23},{45,23},{23,34},{45,56}}; // 4*2
+    2) Find number of rows in the array
+        
+        System.out.println(data.length);
+    3) Find number of column
+        System.out.println(data[i].length);
+    4) Print all element of 2D array 
+        // Using index based for loop
+        for(int i=0; i<data.length; i++){
+            for(int j=0; j<data[i].length; j++){
+                System.out.println(data[i][j]);
+            }
+        }
+        // For each loop
+            for(int row[]   : info )  {
+                    for (int num : row) {
+                        System.out.print(num+ " ");
+                    }
+                    System.out.println();
+            }
