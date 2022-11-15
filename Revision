@@ -1,0 +1,24 @@
+Purpose - To store collectiom of multiple values of same data type
+Operation on 1D array
+
+    1) declare & initialize the array
+          int data[] = new int [5];
+          int data[] = {34,23,53,632,123,1,4,67,2,5};
+          
+    2) how to print all the elements from array?
+          first option ==>  Index based for loop
+          
+          for(int i=0; i<data.length(); i++){
+            System.out.println(data[i]);
+           }
+           
+          second option ==> for each loop
+          
+          for(int a: data){
+            System.out.println(a);
+          }
+          
+     3) default value of arrays
+     
+          int data[] = new int [5:
+          
